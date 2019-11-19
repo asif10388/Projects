@@ -1,0 +1,328 @@
+html, body {
+	background: #eeeeee;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--border: 1px solid #333;
+	--shadow: 1px 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/* =====================
+=========NAVBAR=========
+=======================*/
+
+.dropdown:hover>.dropdown-menu {
+	display: block;
+}
+
+.ml-edit {
+	margin-right: 60px;
+}
+
+.nav-link {
+	margin-right: 20px;
+}
+
+.navbar {
+	min-height: 70px;
+}
+
+a {
+	color: white;
+	transition: color 0.25s ease;
+}
+
+a:hover {
+	color: rgb(120, 255, 255);
+}
+
+.navbar-default {
+	background: #2B475F;
+	border-top: rgb(120, 255, 255) 2px solid;
+}
+
+.navbar-brand {
+	font-weight: bold;
+	font-size: 25px;
+	padding: 0 15px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.navbar-toggler {
+	margin-top: 0px;
+	padding: 4px 7px !important;
+}
+
+@media (max-width: 768px) {
+	.navbar-brand {
+		font-size: 18px;
+	}
+	.navbar {
+		min-height: 40px;
+	}
+	.navbar-nav>li>a {
+		color: white;
+		padding-top: 20.5px;
+		padding-bottom: 20.5px;
+		line-height: 10px;
+	}
+	.navbar-toggler {
+		margin-top: 0px;
+		padding: 4px 7px !important;
+	}
+}
+
+/*========================
+========= CAROUSEL========
+==========================*/
+
+.carousel-item {
+	height: 525px;
+	border-bottom: rgb(120, 255, 255) 4px solid;
+}
+
+.carousel-indicators li {
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	transition: background-color 0.25s ease;
+}
+
+.carousel-indicators li:hover {
+	background-color: rgb(120, 255, 255);
+}
+
+.carousel-control-prev, .carousel-control-next {
+	top: 50%;
+	bottom: 50%;
+}
+
+.carousel-item::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.carousel-image-1 {
+	background: url("img/img-1.jpg")center center no-repeat;
+	background-size: cover;
+}
+
+.carousel-image-2 {
+	background: url("img/img-2.jpg")center center no-repeat;
+	background-size: cover;
+}
+
+.carousel-image-3 {
+	background: url("img/img-3.jpg")center center no-repeat;
+	background-size: cover;
+}
+
+/*==================
+CAROUSEL ARROWS
+===================*/
+
+ul .prev {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+ul .next {
+	position: absolute;
+	top: 50%;
+	left: 90%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.carousel-arrows ul li {
+	list-style: none;
+	width: 60px;
+	height: 60px;
+	background: rgba(27, 27, 27, 0.4);
+	margin: 0 10px;
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+.carousel-arrows ul li:hover {
+	background: rgba(120, 255, 255, 0.9);
+}
+
+ul li span {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border: 4px solid #fff;
+	transition: 0.3s;
+}
+
+ul li.next span {
+	top: 50%;
+	right: 43%;
+	transform: translateY(-50%) rotate(-45deg);
+	border-left: none;
+	border-top: none;
+}
+
+ul li.prev span {
+	top: 50%;
+	left: 43%;
+	transform: translateY(-50%) rotate(-45deg);
+	border-right: none;
+	border-bottom: none;
+}
+
+/* =====================
+==========GALLERY=======
+======================== */
+
+#gallery {
+	padding-top: 40px;
+}
+
+#gallery .card {
+	border: none;
+	background: #ffffff;
+}
+
+.card-parent {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.card-parent .card {
+	min-height: 312px;
+}
+
+.card-body {
+	border-top: rgb(120, 255, 255) 2px solid;
+}
+
+.card-parent .card .card-body img {
+	width: 100%;
+	border-radius: 0;
+}
+
+/* =====================
+==========ABOUT=======
+======================== */
+
+#about {
+	background: #d6e0db;
+	padding: 70px 0;
+	height: 500px;
+}
+
+/* =====================
+==========FOOTER=======
+======================== */
+
+#footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 25px 0;
+	border-top: rgb(120, 255, 255) 2px solid;
+	background: #2B475F;
+	color: white;
+	text-align: center;
+	overflow-y: hidden;
+}
+
+/* =====================
+==========Contact=======
+======================== */
+
+.contact {
+	margin: 30px;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.office {
+	margin-top: 80px;
+}
+
+@media(max-width:768px) {
+	.office {
+		margin-top: -10px;
+	}
+}
+
+/* =====================
+==========Building=======
+======================== */
+
+.right{
+	text-align: right;
+}
+
+#pills-tab {
+	padding-top: 50px;
+}
+
+#tabs {
+	width: 75%;
+	margin: 40px 0 100px 17.5%;
+
+}
+
+#overview {
+	height: 120vh;
+	padding: 30px 0;
+}
+
+.features {
+	background: #fff;
+	padding: 30px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.status {
+
+	margin-top: 30px;
+
+	text-align: center;
+}
+
+.unit-img {
+	width: 75%;
+	margin: 100px 0px 0px 17.5%;
+}
+
+/* =====================
+==========Projects=======
+======================== */
+
+.desc {
+	font-size: 1.5rem;
+}
+
+.info {
+	margin-top: 3.8rem;
+}
+.location{
+	text-align: left;
+	margin-top: 2.2rem;
+	font-size: 1.5rem;
+}
+
+.desc-text {
+	font-size: 1.5rem;
+}

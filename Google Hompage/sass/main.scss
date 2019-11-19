@@ -1,0 +1,163 @@
+$icon-color:#777777;
+$link-text-color:#222222;
+
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: inherit;
+}
+
+body{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 3.5rem 1fr repeat(2,3.5rem);
+
+  &__btn{
+
+    margin-bottom: 2rem;
+
+    & .btn{
+      background-color: #F2F2F2;
+      font-size: 1.2rem;
+      font-weight: 500;
+      border: none;
+      border-radius: 2px;
+      padding: .7rem 1.6rem;
+      color: #666666;
+
+      &:first-child{
+        margin-right: .5rem;
+      }
+    }
+
+  }
+}
+
+
+.nav{
+
+  padding: 1rem;
+
+  &__ul{
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__item{
+    padding: 0 .8rem;
+  }
+
+  &__link{
+    color: $icon-color;
+  }
+
+  &__secondary{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2.7rem;
+
+    background-color: #F2F2F2;
+    border: 1px solid #E4E4E4;
+
+    &-item{
+      font-size: 1.1rem;
+      color: #6F6F6F;
+    }
+
+  }
+
+  &__tertiary{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #F2F2F2;
+    padding-left: 2.7rem;
+
+    &-item{
+      font-size: 1rem;
+      color: #6F6F6F;
+
+      &:not(:last-child){
+        margin-right: 1.8rem;
+      }
+
+      &:nth-child(3){
+        margin-right: auto;
+      }
+
+    }
+
+  }
+
+}
+
+.circle-big{
+  font-size: 3rem ;
+}
+.main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  padding-top: 3rem;
+
+  &__container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__img{
+  display: block;
+  width: 40%;
+  margin-bottom: 2rem;
+  }
+
+  &__search{
+    border: 1px solid rgba($color: #777777, $alpha: .3);
+    width: 85%;
+    padding: 1.2rem 1rem;
+    box-shadow: .1rem .2rem .2rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.7rem;
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+}
+
+
+
+.container__text-sm{
+  font-size: 1rem;
+
+  & a{
+    color: #1A62CF;
+  }
+  
+  & a:hover{
+    text-decoration: underline;
+  }
+ }

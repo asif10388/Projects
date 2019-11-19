@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { background-color: #303030; }
+
+header {
+    position: fixed;
+    display: block;
+    height: 15%;
+    width: 100%;
+}
+
+header h1 {
+    position: relative;
+    font-family: 'Arvo';
+    color: #FFFFFF;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+}
+
+body p {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    font-size: 100px;
+    color: #FFBE00;
+    font-family: 'Staatliches';
+    text-align: center;
+}
+
+p span {
+    position: relative;
+    font-size: 180px;
+    color: #FFFFFF;
+    font-family: 'Lobster';
+    text-shadow: 5px 5px 10px #1e1e1e;
+
+}
+
+p strong {
+    position : relative;
+    font-size : 45px;
+    letter-spacing : 30px;
+    top: 20px;
+    left: 15px;
+}

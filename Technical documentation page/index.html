@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learn Python The Not So Hard Way</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="main-doc" class="columns">
+        <div class="column is-one-quarter">
+            <nav id="navbar">
+                <header>
+                    <h1 class="is-size-4 has-text-white">Python Documentation</h1>
+                </header>
+                <ul class="navClass has-text-white">
+                    <li class="navList"><a href="#Introduction" class="nav-link">Introduction</a></li>
+                    <li class="navList"><a href="#Prerequisites" class="nav-link">Prerequisites</a></li>
+                    <li class="navList"><a href="#Hello_World!" class="nav-link">Hello_World!</a></li>
+                    <li class="navList"><a href="#Variables" class="nav-link">Variables</a></li>
+                    <li class="navList"><a href="#Data_Types" class="nav-link">Data_Types</a></li>
+                    <li class="navList"><a href="#Inputs" class="nav-link">Inputs</a></li>
+                
+
+                </ul>
+            </nav>
+        </div>
+
+        <!-- ===================================================NAVBAR======================================================== -->
+        <!-- ===================================================NAVBAR======================================================== -->
+        <!-- ===================================================NAVBAR======================================================== -->
+        <!-- ===================================================NAVBAR======================================================== -->
+        <!-- ===================================================NAVBAR======================================================== -->
+        <!-- ===================================================NAVBAR======================================================== -->
+        <!-- ===================================================NAVBAR======================================================== -->
+
+
+        <div class="column ">
+            <section class="main-section main_content" id="Introduction">
+                <header id="section-topic">
+                    <h1 class="is-size-4">Introduction</h1>
+                </header>
+                <p id="intro_text">Python is an interpreted high-level programming language for general-purpose
+                    programming. Created by Guido van Rossum and first released in 1991, Python has a design philosophy
+                    that emphasizes code readability, notably using significant whitespace.</p>
+            </section>
+
+            <section class="main-section" id="Prerequisites">
+                <header id="section-topic">
+                    <h1 class="is-size-4">Prerequisites</h1>
+                </header>
+
+                <p class="setting_up">To get started with Python, you first need to install Python 2 or Python 3.Python 3 is preferred by most developers now-a-days because of it's functionality and continuousdevelopment.To install Python 3, go to <a href="https://www.python.org/downloads/" class = "text-link">Python.org</a> and download thelatest release. After you download and install it, you have to add Python to your list of environment variables i.e PATH. To do that watch <a href="https://www.youtube.com/watch?v=Y2q_b4ugPWk"  class = "text-link">THIS</a> video. If you want to code online without going through the hassle of of setting up your workspace, go to <a href="https://repl.it/repls"  class = "text-link"> Repl.it</a> and just choose Python and start coding right away!</p>
+            </section>
+
+            <section class="main-section" id="Hello_World!">
+                <header id="section-topic">
+                    <h1 class="is-size-4">Hello_World!</h1>
+                </header>
+                <p id="first_code">Python is a very simple language, and has a very straightforward syntax. It
+                    encourages
+                    programmers to program without boilerplate (prepared) code. The simplest directive in Python is the
+                    "print" directive - it simply prints out a line (and also includes a newline, unlike in C).
+                    There are two major Python versions, Python 2 and Python 3. Python 2 and 3 are quite different.
+                    This
+                    tutorial uses Python 3, because it more semantically correct and supports newer features.
+                    For example, one difference between Python 2 and 3 is the print statement. In Python 2, the "print"
+                    statement is not a function, and therefore it is invoked without parentheses. However, in Python 3,
+                    it
+                    is a function, and must be invoked with parentheses.</p>
+                <p>To print a string in Python 3, just write:</p>
+                <code id="hello_code">print("Hello World!")</code>
+            </section>
+
+
+
+            <section class="main-section" id="Variables">
+                <header id="section-topic">
+                    <h1 class="is-size-4">Variables</h1>
+                </header>
+                <p id="knowthyvariables">Variables in simple English means a thing that holds a value. It's like a box
+                    which can keep stuff in them and later you can take them out to use them to your hearts content.
+                    Unlike
+                    other programming languages, Python has no command for declaring a variable.A variable is created
+                    the
+                    moment you first assign a value to it.</p>
+                <code>x = 4 # x is of type int</code>
+                
+                <code>x = "Sally" # x is now of type str</code>
+                
+                <code>print(x)</code>
+
+                <p id="knowthyvariables">The Python print statement is often used to output variables.To combine both
+                    text
+                    and a variable, Python uses the + character:</p>
+                <code>x = "awesome"</code>
+                
+                <code>print("Python is " + x)</code>
+            </section>
+
+            <section class="main-section" id="Data_Types">
+                <header id="section-topic">
+                    <h1 class="is-size-4">Data_Types</h1>
+                </header>
+                <p id="datatypes">Every value in Python has a datatype. Since everything is an object in Python
+                    programming, data types are actually classes and variables are instance (object) of these
+                    classes.There
+                    are 5 data types in Python - </p>
+                <ul>
+                    <li id="data">Numbers</li>
+                    <li id="data">String</li>
+                    <li id="data">Boolean</li>
+                    <li id="data">List</li>
+                    <li id="data">Dictionary</li>
+                </ul>
+
+                <h2>Numbers</h2>
+                <p>Python numbers variables are created by the standard Python method:</p>
+                <code>var = 382</code>
+
+                <p>Most of the time using the standard Python number type is fine. Python will automatically convert a
+                    number from one type to another if it needs. But, under certain circumstances that a specific
+                    number
+                    type is needed (ie. complex, hexidecimal), the format can be forced into a format by using
+                    additional
+                    syntax in the table below:</p>
+
+                <ul>
+                    <li><code>int a = 10</code> || Signed Integer</li>
+                    <li><code>int a = 10</code> || Signed Integer</li>
+                    <li><code>float a = 45.67</code> (.) || Floating point real values</li>
+                    <li><code>complex a = 3.14J</code> (J) || Contains integer in the range 0 to 255.</li>
+                </ul>
+                </code>
+                <p>Most of the time Python will do variable conversion automatically. You can also use Python
+                    conversion
+                    functions (int(), long(), float(), complex()) to convert data from one type to another. In
+                    addition,
+                    the type function returns information about how your data is stored within a variable.</p>
+
+                <h2>String</h2>
+                <p>Create string variables by enclosing characters in quotes. Python uses single quotes ' double quotes
+                    " and triple quotes """ to denote literal strings. Only the triple quoted strings """ also
+                    willautomatically continue across the end of line statement.</p>
+
+                <code>firstName = 'john'</code>
+                
+                <code>lastName = "smith"</code>
+                
+                <code>message = """This is a string that will span across multiple lines. Using newline character sand no spaces for the next lines. The end of lines within this string also count as a newline when printed"""</code>
+                </code>
+
+                <h2>List</h2>
+                <p>Lists are a very useful variable type in Python. A list can contain a series of values. List
+                    variables
+                    are declared by using brackets [ ] following the variable name.</p>
+
+                <code> A = [ ] # This is a blank list variable</code>
+                
+                <code>B = [1, 23, 45, 67] # this list creates an initial list of 4 numbers.</code>
+                
+                <code>C = [2, 4, 'john'] # lists can contain different variable types.</code>
+                        
+                <p>All lists in Python are zero-based indexed. When referencing a member or the length of a list the
+                    number
+                    of list elements is always the number shown plus one.</p>
+            </section>
+
+            <section class="main-section" id="Inputs">
+                <header id="section-topic">
+                    <h1 class="is-size-4">Inputs</h1>
+                </header>
+                <p>The hello program of The Classic First Program always does the same thing. This is not very
+                    interesting.
+                    Programs are only going to be reused if they can act on a variety of data. One way to get data is
+                    directly from the user. To do this we use the input feature to get user input from the user and
+                    make
+                    decisions based on that data. Here we takea a basic input:</p>
+                <code>person = input('Enter your name: ')</code>
+                
+                <code>print('Hello', person)</code>
+                <p>Upon running this program it will prompt you to enter your name. After you enter your name and hit
+                    enter you should see:</p>
+                <code>Enter your name:Asif</code>
+                
+                <code>Hello, Asif!</code>
+            </section>
+
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+body,html{
+    margin: 0;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Lato',sans-serif;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: #666666;
+}
+
+.bigImage, .bigImage2, .bigImage3{
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-attachment: fixed; 
+}
+.bigImage{
+    background-image: url('City.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat; 
+    min-height: 100%;
+
+}
+
+.bigImage2{
+    background-image: url('Food.jpeg');
+    min-height: 400px;
+}
+
+.bigImage3{
+    background-image: url('Nature.jpeg');
+    min-height: 400px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background: #f4f4f4;
+    color:#666666;
+}
+.section-dark{
+    background: #282e34;
+    color: #dddddd;
+}
+.bigText{
+    position: absolute;
+    text-align: center;
+    width:100%;
+    top: 50%;
+    font-size: 27px;
+    color: #000000;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.bigText .border{
+    background: #111111;
+    color:#fff;
+    padding: 20px;
+
+}

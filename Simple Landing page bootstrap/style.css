@@ -1,0 +1,42 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+.main{
+  height: 100vh;
+  background: url("main.jpg") center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+h1{
+  font-size: 2.5em;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+.text-btn{
+  text-align: center;
+  padding: 1rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn-custom{
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 100px;
+  background-color: #fd5448;
+  color: white;
+  
+}
+
+.btn-custom:hover{
+  background-color: #fd4437;
+  cursor: pointer;
+}

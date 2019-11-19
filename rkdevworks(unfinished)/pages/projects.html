@@ -1,0 +1,270 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>R.K Landmark</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<style>
+		#footer {
+			position: fixed;
+			overflow-y: hidden;
+		}
+
+		.image {
+			/* border-bottom: 1px solid #333; */
+			/* height: 20vh; */
+			background-image: url("../img/img-5.jpg");
+			background-size: cover;
+			background-position: center;
+			border-radius: 5px;
+			/* border: 2px solid #333; */
+		}
+
+		.row {
+			background-color: #2B475F;
+			border-radius: 10px;
+			padding: 10px;
+			color: white;
+		}
+
+		.buildingDetails {
+			width: 100%;
+			margin-top: 5%;
+			height: 65%;
+			overflow-y: scroll;
+		}
+
+		.location {
+			text-align: left;
+			margin-top: 10px;
+			font-size: 18px;
+		}
+
+		@media(max-width: 1024px) {
+			.desc {
+				/* border: var(--border); */
+				font-size: 16px;
+			}
+
+			.info {
+				margin-top: 0;
+
+			}
+
+			.location {
+				text-align: left;
+				margin-top: 0;
+				font-size: 16px;
+			}
+
+			.desc-text {
+				font-size: 16px;
+			}
+
+			.buildingDetails {
+				margin-top: 17.5%;
+			}
+		}
+
+		@media(min-width: 768px) {
+			.image {
+				/* height: 20vh; */
+			}
+
+			.desc {
+				/* border: var(--border); */
+				font-size: 16px;
+			}
+
+			.info {
+				margin-top: 0;
+				font-size: 17px;
+
+			}
+
+			.location {
+				text-align: left;
+				margin-top: 10px;
+				font-size: 18px;
+			}
+
+			.desc-text {
+				font-size: 17px;
+			}
+		}
+
+		@media (max-width: 1366px) {
+			.location {
+				text-align: left;
+				margin-top: 0px;
+				font-size: 14px;
+			}
+		}
+
+		@media (max-width: 1600px) {
+			.image {
+				height: 20vh;
+			}
+		}
+
+		@media (min-width: 2560px) {
+			.desc {
+				/* border: var(--border); */
+				font-size: 3rem;
+			}
+
+			.info {
+				margin-top: 3.8rem;
+				font-size: 2.5rem;
+				/* border-bottom: var(--border); */
+			}
+
+			.location {
+				text-align: left;
+				margin-top: 2.2rem;
+				/* border-bottom: var(--border); */
+				font-size: 2.5rem;
+			}
+
+			.desc-text {
+				font-size: 2.5rem;
+				/* border-bottom: var(--border); */
+			}
+
+			.p-name {
+				font-size: 3.5rem;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar sticky-top navbar-expand-sm navbar-dark navbar-default">
+		<a class="navbar-brand" href="../index.html">R.K. Landmark</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+		 aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto ml-edit">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../pages/contact.html">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Projects</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<section class="buildingDetails" id="buildingDetails">
+		<div class="container">
+			<a class="nav-link" href="../pages/building.html?id=1">
+				<div class="row">
+					<div class="col-lg-3 image"></div>
+					<div class="col-lg-9 desc">
+						<h2 class="p-name">Project Name</h2>
+						<div>Area: 1000 square-feet</div>
+						<br>
+						<p class="location">Location : Dhanmondi, Dhaka</p>
+					</div>
+				</div>
+			</a>
+			<a class="nav-link" href="../pages/building.html?id=1">
+				<div class="row">
+					<div class="col-lg-3 image"></div>
+					<div class="col-lg-9 desc">
+						<h2 class="p-name">Project Name</h2>
+						<div>Area: 1000 square-feet</div>
+						<br>
+						<br>
+						<p class="location">Location : Dhanmondi, Dhaka</p>
+					</div>
+				</div>
+			</a>
+			<a class="nav-link" href="../pages/building.html?id=1">
+				<div class="row">
+					<div class="col-lg-3 image"></div>
+					<div class="col-lg-9 desc">
+						<h2 class="p-name">Project Name</h2>
+						<div>Area: 1000 square-feet</div>
+						<br>
+						<br>
+						<p class="location">Location : Dhanmondi, Dhaka</p>
+					</div>
+				</div>
+			</a>
+			<a class="nav-link" href="../pages/building.html?id=1">
+				<div class="row">
+					<div class="col-lg-3 image"></div>
+					<div class="col-lg-9 desc">
+						<h2 class="p-name">Project Name</h2>
+						<div>Area: 1000 square-feet</div>
+						<br>
+						<br>
+						<p class="location">Location : Dhanmondi, Dhaka</p>
+					</div>
+				</div>
+			</a>
+			<a class="nav-link" href="../pages/building.html?id=1">
+				<div class="row">
+					<div class="col-lg-3 image"></div>
+					<div class="col-lg-9 desc">
+						<h2 class="p-name">Project Name</h2>
+						<div>Area: 1000 square-feet</div>
+						<br>
+						<br>
+						<p class="location">Location : Dhanmondi, Dhaka</p>
+					</div>
+				</div>
+			</a>
+			<a class="nav-link" href="../pages/building.html?id=1">
+				<div class="row">
+					<div class="col-lg-3 image"></div>
+					<div class="col-lg-9 desc">
+						<h2 class="p-name">Project Name</h2>
+						<div>Area: 1000 square-feet</div>
+						<br>
+						<br>
+						<p class="location">Location : Dhanmondi, Dhaka</p>
+					</div>
+				</div>
+			</a>
+			<a class="nav-link" href="../pages/building.html?id=1">
+				<div class="row">
+					<div class="col-lg-3 image"></div>
+					<div class="col-lg-9 desc">
+						<h2 class="p-name">Project Name</h2>
+						<div>Area: 1000 square-feet</div>
+						<br>
+						<br>
+						<p class="location">Location : Dhanmondi, Dhaka</p>
+					</div>
+				</div>
+			</a>
+		</div>
+	</section>
+
+
+	<footer id="footer">
+		<div class="container">
+			<div class="d-flex justify-content-center">Developed by Xenlancers</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
+</body>
+
+</html>

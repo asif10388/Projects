@@ -1,0 +1,172 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>R.K Landmark</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style>
+		.tab-content {
+			width: 87%;
+		}
+
+		#overview {
+			height: 50vh;
+			padding: 30px 0;
+		}
+
+		.hero-image {
+			background-image: url("../img/img-5.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			border-top: rgb(120, 255, 255) 4px solid;
+			height: 40vh;
+			width: 75%;
+
+		}
+
+		a {
+			color: #2424FB;
+		}
+
+		#oops {
+			padding: 200px;
+		}
+
+		#oops>h1 {
+			font-size: 80px;
+		}
+
+		#oops>p {
+			font-size: 34px;
+		}
+
+		#building_placeholder {
+			display: none;
+		}
+
+		@media(max-width: 768px) {
+			.hero-image {
+				height: 30vh;
+
+			}
+			#tabs {
+				margin-left: 15%;
+				margin-top: -70px;
+			}
+
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar sticky-top navbar-expand-sm navbar-dark navbar-default">
+		<a class="navbar-brand" href="../index.html">R.K. Landmark</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+		 aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto ml-edit">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../pages/contact.html">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../pages/projects.html">Projects</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="text-center" id="oops">
+		<h1>OOPS!</h1>
+		<br>
+		<p>
+			It Seems You Accidentally Landed on This Page.
+			<br> Click
+			<a style="background-color: black; color:white;" href="../index.html">Here</a> to Go to The Home Page.
+		</p>
+	</div>
+
+	<div id="building_placeholder">
+		<section id="overview">
+			<div class="container hero-image"></div>
+			<div class="container status">
+				<h3 class="display-6" style="color: rgb(120, 255, 255); text-shadow: 0px 0px 10px #003C3C;">Status : Completed</h3>
+			</div>
+		</section>
+		<section id="tabs">
+			<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+					 aria-selected="true">Description</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
+					 aria-selected="false">Feautres</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
+					 aria-selected="false">Units</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+					<div class="container text-center">
+						<h1 id="b_name">Building Name</h1>
+						<p class="lead" id="desc">Description Space</p>
+					</div>
+				</div>
+
+				<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+					<div class="container features">
+						<h1 class="text-center">What is special</h1>
+						<ul class="list-group">
+							<li class="list-group-item" id="feat">Feature Template</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+					<nav>
+						<div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+							<a class="nav-item nav-link active" id="nav-unit-a" data-toggle="tab" href="#nav-unit-a-tab" role="tab" aria-controls="nav-unit-a-tab"
+							 aria-selected="true">Unit A</a>
+						</div>
+					</nav>
+					<div class="tab-content" id="nav-tabContent">
+						<div class="tab-pane fade show active" id="nav-unit-a-tab" role="tabpanel" aria-labelledby="nav-unit-a-tab">
+							<img class="unit-img justify-content-center" src="../img/001/a.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer style="position: fixed; margin-bottom:0%;" id="footer">
+		<div class="container">
+			<div class="d-flex justify-content-center">Developed by Xenlancers</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
+	<script src="../javascript/buildings_data.js"></script>
+	<script src="../javascript/buildings_populate.js"></script>
+</body>
+
+</html>

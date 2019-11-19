@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
+</head>
+
+<body>
+    <div class="container"> 
+        <header class="header">
+
+            <img src="img/logo.png" alt="" class="logo">
+
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Search hotels">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+
+            <nav class="user-nav">
+
+                <div class="user-nav__icon-box">
+                    <div class="user-nav__icon">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                    </div>
+                    <span class="user-nav__notification">7</span>
+                </div>
+
+                <div class="user-nav__icon-box">
+                    <div class="user-nav__icon">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                    </div>
+                    <span class="user-nav__notification">13</span>
+                </div>
+                <div class="user-nav__user">
+                    <img src="img/my-profile-pic-78.png" alt="" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">Asif</span>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content">
+
+            <nav class="sidebar">
+
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-home"></use>
+                                <span>Hotel</span>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                                <span>Flight</span>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-key"></use>
+                                <span>Car rental</span>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-map"></use>
+                                <span>Tours</span>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="legal">
+                    &copy; 2018 by Trillo;all rights reserved.
+                </div>
+
+            </nav>
+
+            <main class="hotel-view">
+
+                <div class="gallery">
+                    <figure class="gallery__item"><img src="img/hotel-1.jpg" alt="" class="gallery__photo"></figure>
+                    <figure class="gallery__item"><img src="img/hotel-2.jpg" alt="" class="gallery__photo"></figure>
+                    <figure class="gallery__item"><img src="img/hotel-3.jpg" alt="" class="gallery__photo"></figure>
+                </div>
+                <div class="overview">
+                    <h1 class="overview__heading">Hotel Live the moment</h1>
+
+                    <div class="overview__stars">
+                            <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                    </div>
+
+                    <div class="overview__location">
+                            <svg class="overview__icon-location">
+                                    <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                            </svg>
+                            <button class="btn-inline">Akumo,Universe 18</button>
+                    </div>
+                    <div class="overview__rating">
+                        <div class="overview__rating-average">8.7</div>
+                        <div class="overview__rating-count">653 votes</div>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div class="description">
+                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem consequatur, ad deserunt maxime amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere.</p>
+
+                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem consequatur, ad</p>
+
+                        <ul class="list">
+                            <li class="list__item">lorem ipsum dolor sit amet</li>
+                            <li class="list__item">lorem ipsum dolor sit amet</li>
+                            <li class="list__item">lorem ipsum dolor sit amet</li>
+                            <li class="list__item">lorem ipsum dolor sit amet</li>
+                            <li class="list__item">lorem ipsum dolor sit amet</li>
+                            <li class="list__item">lorem ipsum dolor sit amet</li>
+                            <li class="list__item">lorem ipsum dolor sit amet</li>
+                            <li class="list__item">lorem ipsum dolor sit amet</li>
+                        </ul>
+
+                        <div class="recommend">
+                            <p class="recommend__count">
+                                Yolo and 3 other friends recommend this hotel.
+                            </p>
+                            <div class="recommend__friends">
+                                <img src="img/user-3.jpg" class="recommend__photo">
+                                <img src="img/user-4.jpg" class="recommend__photo">
+                                <img src="img/user-5.jpg" class="recommend__photo">
+                                <img src="img/user-6.jpg" class="recommend__photo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-reviews">
+
+                        <figure class="review">
+
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, eius Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+                            </blockquote>
+
+                            <figcaption class="review__user">
+                                <img src="img/user-1.jpg" alt="" class="review__photo">
+                                <div class="review__box">
+                                    <p class="review__user-name">Nick Smith</p>
+                                    <p class="review__user-date">April 6th, 2018</p>
+                                </div>
+                                <div class="review__rating">9.5</div>
+                            </figcaption>
+                            
+                        </figure>
+
+                    
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, eius Lorem ipsum dolor sit amet.
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="img/user-2.jpg" alt="" class="review__photo">
+                                <div class="review__box">
+                                    <p class="review__user-name">Nick Smith</p>
+                                    <p class="review__user-date">April 6th, 2018</p>
+                                </div>
+                                <div class="review__rating">9.5</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+    </div>
+</body>
+
+</html>

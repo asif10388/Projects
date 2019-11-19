@@ -1,0 +1,158 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  border: none;
+  outline: none;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Lato';
+}
+  
+ body{
+    box-sizing: border-box;
+    padding: 3rem;
+    background-color: #2ed573;
+}
+
+#title{
+    font-size: 5rem;
+    color: #fff;
+}
+
+#description{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+#survey-start{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2rem;
+    padding: 5rem;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    background-color: #fff;
+}
+
+#survey-form{
+    display: flex;
+    flex-direction: column;
+}
+
+#message{
+    width: 80%;
+    margin-left: 5rem;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.dropdown{
+    width: 17rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid rgba(0,0,0,0.2);
+    
+}
+
+.form-label{
+    padding: 5rem;
+    font-size: 3rem;
+}
+
+.form-input{
+    padding: .5rem;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-top: -1rem;
+    width: 80%;
+}
+
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+}
+
+input[type=checkbox]
+{
+  transform: scale(1.2);
+  margin:0.8rem 0.5rem 0 0.5rem;
+  padding: 10px;
+}
+
+.radios{
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+}
+
+.ml5{
+    margin-left: 5rem;
+}
+
+.mt5{
+    margin-bottom: -5rem;
+}
+
+#submit{
+    padding: 1.5rem 2rem;
+    background-color: #16E689;
+    color: white;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    border-radius: 4px;
+    border-bottom: 4px solid #14d27c;
+    transition: all .2s;
+    backface-visibility: hidden;
+}
+
+#submit:hover{
+    transform: scale(1.1);
+}
+
+#submit:active{
+    border-bottom: none;
+    background-color: #16E689;
+}
+@media screen and (max-width:700px){
+    .form-label{
+        padding: 0;
+        font-size: 2rem;
+    }
+
+    #survey-start{
+        width: 100%;
+
+    }
+
+    .form-input{
+        padding: .5rem;
+        margin-left: 0;
+        width: 80%;
+        margin-top: 0;
+    }
+
+    .ml5{
+        margin-left: 0;
+    }
+
+    .checkboxes{
+        margin-left: 0;
+    }
+    html{
+        font-size: 50%;
+    }
+
+    .mt5{
+        margin-bottom: 0;
+    }
+
+    #message{
+        margin-left: 0;
+    }
+}

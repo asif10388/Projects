@@ -1,0 +1,207 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'Lato',sans-serif;
+}
+
+body{
+  box-sizing: border-box;
+}
+
+.hero-section{
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("img/main-image.jpg") center no-repeat;
+    background-size: cover;
+    height: 120vh;
+    padding: 2rem;
+    border: 1px solid black;
+    
+}
+
+.header-text-box{
+  font-size: 3.2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.header-text-box p{
+  font-size: 2.2rem;
+}
+
+.header-text-box #form input{
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  padding: 1rem 4rem;
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  margin-top: 1rem;
+  transition: all .3s;
+  outline: none;
+}
+
+.header-text-box #form input:focus{
+  background: rgba(255, 255, 255, 1);
+}
+
+.header-text-box #form #submit{
+  padding: 1rem 3rem;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  transition: all .3s;
+  border-radius: 5px;
+}
+
+.header-text-box #form #submit:hover{
+  background: rgba(255, 255, 255, 0.9);
+}
+/* =======================
+==========NAVBAR===========
+============================ */
+#header-img{
+  margin-right: auto;
+}
+
+#nav-bar{
+  font-size: 2rem;
+  display: flex;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+#nav-ul{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+#nav-li{
+  padding: 1.5rem;
+}
+
+#nav-link{
+  color: black;
+}
+
+/* =======================
+==========NAVBAR-END===========
+============================ */
+
+
+/* =======================
+==========Section-1===========
+============================ */
+
+.section-1{
+ padding: 5rem;
+ display: flex;
+ font-size: 1.5rem;
+ /* border: 1px solid black; */
+ width: 100%;
+ /* background-color: bisque; */
+}
+
+.section-2{
+  padding: 5rem;
+  display: flex;
+  font-size: 1.5rem;
+  /* border: 1px solid black; */
+  width: 100%;
+  /* background-color: bisque; */
+ }
+
+.image-box{
+  /* border: 1px solid black; */
+  margin-right: 10rem;
+}
+
+.img-1,.img-2,.img-3{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text-box{
+  /* border: 1px solid black; */
+    font-size: 2rem;
+}
+.text-box li{
+  list-style-type: disc;
+}
+
+
+.hr{
+  height: 8rem;
+  background: url("img/hr.png") center no-repeat;
+  background-size: cover;
+}
+
+
+.video{
+  padding: 3rem;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.mi-video{
+  display: block;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.video h1{
+  font-size: 3.5rem;
+  color: white
+}
+
+.title{
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+
+@media screen and (max-width:700px){
+  html{
+    font-size: 50%;
+  }
+ .section-1,.section-2{
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .image-box{
+  margin-bottom: 2rem;
+ }
+
+ .text-box{
+   order: 2;
+ }
+}
+
+/* <a href="https://ibb.co/k2nsVT"><img src="https://preview.ibb.co/eEYXVT/header_logo.jpg" alt="header_logo" border="0"></a>
+<a href="https://ibb.co/g7Do4o"><img src="https://preview.ibb.co/ne0CVT/hr.png" alt="hr" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://image.ibb.co/eTWVH8/img_1.jpg" alt="img_1" border="0"></a>
+<a href="https://ibb.co/h4OMPo"><img src="https://image.ibb.co/mwsFjo/img_3.jpg" alt="img_3" border="0"></a>
+<a href="https://ibb.co/kRngPo"><img src="https://preview.ibb.co/dqXsVT/main_image.jpg" alt="main_image" border="0"></a> */

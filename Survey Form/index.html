@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <center>
+                <h1 id="title">Survey Form</h1>
+            </center>
+            <br>
+            <br>
+            <div id="survey-start">
+                <p id="description">This is a short survey to help us better understand your needs</p>
+                <form action="" id="survey-form">
+                    <label class="form-label" for="name" id="name-label">What's your name?</label>
+                    <input class="form-input ml5" type="text" name="name" id="name" placeholder="Enter Name" required>
+
+                    <label class="form-label" for="email" id="email-label">What's your email?</label>
+                    <input class="form-input ml5" type="email" id="email" placeholder="Enter Email" required>
+
+                    <label class="form-label" for="age" id="number-label">What's your age?</label>
+                    <input class="form-input ml5" type="number" id="number" placeholder="Enter age" min="5" max="70">
+
+                    <label class="form-label mt5" id="name-label">What best describes your current role?</label>
+                    <select class="dropdown ml5" id="dropdown">
+                        <option value="volvo">Select from below</option>
+                        <option value="student">Student</option>
+                        <option value="opel">Full Stack Developer</option>
+                        <option value="audi">Front End Engineer</option>
+                        <option value="audi">Back End Engineer</option>
+                        <option value="audi">Other</option>
+                    </select>
+
+                    <label class="form-label mt5" id="name-label">How likely is that you would recommend freeCodeCamp to a friend?</label>
+                    <div class="radios">
+                        <div class="inputBox">
+                            <input type="radio" value="radio" name="radio">
+                            <label for="radio">Definitely</label>
+                        </div>
+                        <div class="inputBox">
+                            <input type="radio" value="radio" name="radio">
+                            <label for="radio">Maybe</label>
+                        </div>
+                        <div class="inputBox">
+                            <input type="radio" value="radio" name="radio">
+                            <label for="radio">Not sure</label>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <label class="form-label mt5" id="name-label">What do you like most in FCC:</label>
+                    <select class="dropdown ml5" id="dropdown">
+                        <option>Select from below</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="open-source">Open Source</option>
+                    </select>
+
+                    <label class="form-label mt5" id="name-label">Things that should be improved in the future
+                        (Check all that apply):</label>
+                    <div class="checkboxes">
+                        <div class="input-box">
+                            <input class="form-element" type="checkbox" name="vehicle1" value="Bike">
+                            <label for="radio">Front-end Projects</label>
+                        </div>
+                        <div class="input-box">
+                            <input class="form-element" type="checkbox" name="vehicle1" value="Bike">
+                            <label for="radio">Back-end Projects</label>
+                        </div>
+                        <div class="input-box">
+                            <input class="form-element" type="checkbox" name="vehicle1" value="Bike">
+                            <label for="radio">Data Visualization</label>
+                        </div>
+                        <div class="input-box">
+                            <input class="form-element" type="checkbox" name="vehicle1" value="Bike">
+                            <label for="radio">Challenges</label>
+                        </div>
+                        <div class="input-box">
+                            <input class="form-element" type="checkbox" name="vehicle1" value="Bike">
+                            <label for="radio">Open Source Community</label>
+                        </div>
+                        <div class="input-box">
+                            <input class="form-element" type="checkbox" name="vehicle1" value="Bike">
+                            <label for="radio">Gitter help rooms</label>
+                        </div>
+
+                        <div class="input-box">
+                            <input class="form-element" type="checkbox" name="vehicle1" value="Bike">
+                            <label for="radio">Videos</label>
+                        </div>
+                        <div class="input-box">
+                            <input class="form-element" type="checkbox" name="vehicle1" value="Bike">
+                            <label for="radio">City Meetups</label>
+                        </div>
+                        <div class="input-box">
+                            <input class="form-element" type="checkbox" name="vehicle1" value="Bike">
+                            <label for="radio">Wiki</label>
+                        </div>
+                        <div class="input-box">
+                            <input class="form-element" type="checkbox" name="vehicle1" value="Bike">
+                            <label for="radio">Forum</label>
+                        </div>
+                        <div class="input-box">
+                            <input class="form-element" type="checkbox" name="vehicle1" value="Bike">
+                            <label for="radio">Additional Courses</label>
+                        </div>
+
+                    </div>
+
+                    <label class="form-label mt5" id="name-label">Any Comments or Suggestions?</label>
+                    <textarea class="form-element" name="message" id="message" rows="10" placeholder="Enter message"></textarea>
+                    <button id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

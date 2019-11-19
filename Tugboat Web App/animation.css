@@ -1,0 +1,49 @@
+
+/*	Animations - WebKit only
+------------------------------------------ */
+.boat{
+    animation: rock-boat 3s ease-in-out  infinite;
+}
+.boat::after{
+    animation: steam 4s 2s infinite;
+}
+body{
+    animation: bg-move 8s 1s ease-out forwards;
+}
+.mike{
+    animation: mike-move 6s 6s ease-out forwards,
+               mike-float 3s infinite;
+}
+/*	Keyframes - WebKit only
+------------------------------------------ */
+@keyframes rock-boat {
+    50%  {transform: rotate(-5deg) translateY(-10px);}
+}
+
+@keyframes steam {
+    40%,
+    60%  {opacity: 1;}
+    100% { transform: rotateZ(20deg) translate(-15%,-35%); }
+}
+
+@keyframes bg-move {
+    0%   { background-position: 100% -480px; }
+    100% { background-position: -350% -480px; }
+}
+
+@keyframes mike-move {
+    100% {left: 12%;}
+}
+
+@keyframes mike-float {
+    50% {transform: rotateZ(5deg) translateY(-5px);}
+}
+
+
+
+
+
+
+
+
+

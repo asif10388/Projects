@@ -1,0 +1,6 @@
+// var location = document.getElementById('location');
+// var temperature = document.getElementById('temperature');
+// var weather_condition = document.getElementById('weather-condition');
+// var weather_status = document.getElementById('weather-status');
+// area.innerHTML = weather.name + "," + weather.sys.country;
+// weather_condition.innerHTML = weather.weather[0].main;
